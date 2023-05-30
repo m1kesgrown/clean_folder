@@ -2,7 +2,7 @@ from setuptools import setup, find_namespace_packages
 
 setup(
     name='Clean folder function',
-    version='0.0.4',
+    version='0.1.4',
     description='This is my frist package from homework',
     author='Oleksii Chygrin',
     author_email='czygrin.oleksii@gmail.com',
