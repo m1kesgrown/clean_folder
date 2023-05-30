@@ -3,17 +3,6 @@ import shutil
 import zipfile
 
 
-dest_fold_im = os.path.join(path, 'Images')
-os.makedirs(dest_fold_im, exist_ok=True)
-dest_fold_vid = os.path.join(path, 'Video')
-os.makedirs(dest_fold_vid, exist_ok=True)
-dest_fold_mus = os.path.join(path, 'Music')
-os.makedirs(dest_fold_mus, exist_ok=True)
-dest_fold_doc = os.path.join(path, 'Documents')
-os.makedirs(dest_fold_doc, exist_ok=True)
-dest_fold_arc = os.path.join(path, 'Archieve')
-os.makedirs(dest_fold_arc, exist_ok=True)
-
 img_files = []
 vid_files = []
 doc_files = []
@@ -23,7 +12,17 @@ know_files = [img_files, vid_files, doc_files, mus_files, arc_files]
 know_ext = []
 unknow_ext = []
 
-def main():    
+def main():
+    dest_fold_im = os.path.join(path, 'Images')
+    os.makedirs(dest_fold_im, exist_ok=True)
+    dest_fold_vid = os.path.join(path, 'Video')
+    os.makedirs(dest_fold_vid, exist_ok=True)
+    dest_fold_mus = os.path.join(path, 'Music')
+    os.makedirs(dest_fold_mus, exist_ok=True)
+    dest_fold_doc = os.path.join(path, 'Documents')
+    os.makedirs(dest_fold_doc, exist_ok=True)
+    dest_fold_arc = os.path.join(path, 'Archieve')
+    os.makedirs(dest_fold_arc, exist_ok=True)
     def sort(path):
         for obj in os.listdir(path):
             obj_path = os.path.join(path, obj)
