@@ -1,2 +1,2 @@
 # clean_folder
- package
+ this script allow you to filtr documents in folder. 
